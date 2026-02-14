@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA CRASHED - ADI.EXE</title>
+    <style>
+        body {
+            background-color: #900; /* Rojo de error */
+            color: white;
+            font-family: 'Consolas', 'Monaco', monospace;
+            padding: 40px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        .error-code { font-size: 3rem; font-weight: bold; margin-bottom: 20px; }
+        .stack-trace {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            overflow-x: auto;
+        }
+        .solution {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            border-left: 5px solid white;
+            padding-left: 15px;
+        }
+        .highlight { color: #ffff00; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="error-code">:( FATAL_ERROR</div>
+    <p>Se ha producido un problema en el sistema y es necesario reiniciar.</p>
+    
+    <div class="stack-trace">
+        <code>
+            > Exception in thread "main" java.lang.ChocolateNotFoundException: Adi_Sugar_Level < 10% <br>
+            > at Corazon.Status.CheckHappiness(SanValentin.java:14) <br>
+            > at Estomago.Nivel.CheckCacao(SanValentin.java:28) <br>
+            > ... 14 more <br>
+            > [WARNING]: Se recomienda instalación inmediata del parche: <span class="highlight">Kinder.zip</span>
+        </code>
+    </div>
+
+    <div class="solution">
+        <strong>SOLUCIÓN SUGERIDA:</strong>
+        <p>Para desbloquear el siguiente módulo, busca el "parche de seguridad" en el lugar donde hace mucho mucho frio. <br><br>
+        <em>Una vez ingerido, escanea el código que viene con el regalo.</em></p>
+    </div>
+</body>
+</html>
