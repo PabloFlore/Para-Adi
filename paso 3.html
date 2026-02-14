@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALAXY_DATABASE_626</title>
+    <style>
+        body {
+            background-color: #001a33;
+            color: #00ffff;
+            font-family: 'Segoe UI', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .scanner {
+            width: 100%;
+            height: 3px;
+            background: #00ffff;
+            position: absolute;
+            top: 0;
+            box-shadow: 0 0 15px #00ffff;
+            animation: scan 3s linear infinite;
+        }
+        @keyframes scan {
+            0% { top: 0%; }
+            100% { top: 100%; }
+        }
+        .data-card {
+            border: 2px solid #00ffff;
+            padding: 25px;
+            background: rgba(0, 255, 255, 0.05);
+            border-radius: 0 40px 0 40px;
+            max-width: 80%;
+            box-shadow: inset 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+        .ohana-text {
+            color: #ff66b2; /* Rosa como la nariz de Stitch */
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff66b2;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanner"></div>
+    
+    <div class="data-card">
+        <h2 style="margin-top:0;">> EXP_626_DETECTED</h2>
+        <p><strong>ESTADO:</strong> ABRAZO URGENTE</p>
+        <p><strong>ADVERTENCIA:</strong> Se ha detectado un rastro de <span class="ohana-text">"Alien"</span> en el área de descanso.</p>
+        <hr style="border: 0.5px solid #00ffff;">
+        <p>El experimento ha escapado de la nave y se ha refugiado en un lugar <span style="color: #fff;">suave y cómodo</span></p>
+        <p>> <strong>MISIÓN:</strong> Rescata a 626 antes de que cause un caos.</p>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 0.8rem; letter-spacing: 2px;">LOCALIZANDO COORDENADAS</p>
+</body>
+</html>
